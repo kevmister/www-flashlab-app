@@ -32,13 +32,71 @@
     "name": "FlashLab",
     "description": "Control your Kilter Board via Bluetooth. Browse thousands of climbs, generate playlists, log sends, and share sessions.",
     "applicationCategory": "SportsApplication",
+    "applicationSubCategory": "Climbing Training",
     "operatingSystem": "Web",
     "url": "https://flashlab.app",
     "offers": {
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD"
-    }
+    },
+    "featureList": "Bluetooth LED control, Climb search and filtering, Playlist generator, Logbook with CSV export, Party Mode multi-user sessions, QR code sharing, Community ratings and tags, AI-powered similar climbs, Offline PWA support"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is FlashLab?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "FlashLab is a free web app that connects to your Kilter Board via Bluetooth. You can browse thousands of climbs, control LEDs, generate playlists, log your sends, and share sessions with friends — all from your phone."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which Kilter Boards does FlashLab support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "FlashLab supports all Kilter Board sizes: Original boards (7×10, 8×12, 12×12, 12×14, 16×12) and Homewall kits (7×10, 8×12, 10×10, 10×12) with both Full Ride and Mainline LED layouts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does FlashLab work on iPhone or iPad?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "iOS/Safari does not support Web Bluetooth, so you cannot connect directly from an iPhone. However, you can use Party Mode — have an Android or desktop Chrome user host the session and join from your iPhone with a PIN code."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need an account to use FlashLab?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. You can browse climbs, connect to your board, and generate playlists without an account. Sign in with your email to unlock the logbook, community ratings, and tags."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does FlashLab work without internet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. FlashLab is a Progressive Web App (PWA) that you can install on your home screen. Once loaded, the climb database is cached locally and Bluetooth control works entirely offline."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Party Mode?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Party Mode lets one device host the Bluetooth connection while others join from their phones using a PIN or QR code. Everyone can browse climbs and send routes to the board — no more passing one phone around."
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -46,7 +104,7 @@
   <header class="site-header">
     <div class="container">
       <div class="logo">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="FlashLab logo"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
         <span>FlashLab</span>
       </div>
       <a href="https://climb.flashlab.app" class="btn btn-sm">Launch App</a>
@@ -57,7 +115,7 @@
     <section class="hero">
       <div class="container">
         <h1>Your Kilter Board,<br>supercharged.</h1>
-        <p class="hero-sub">Browse thousands of climbs, control LEDs via Bluetooth, log your sends, and climb with friends — all from your phone.</p>
+        <p class="hero-sub">FlashLab is a free Kilter Board app that connects via Bluetooth to control LEDs, browse thousands of climbs, generate training playlists, and track your progress — all from your phone.</p>
         <div class="hero-actions">
           <a href="https://climb.flashlab.app" class="btn btn-primary">Open FlashLab</a>
           <a href="#features" class="btn btn-ghost">See Features</a>
@@ -132,6 +190,36 @@
           <span>12&times;14</span>
           <span>16&times;12</span>
         </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+          <summary>What is FlashLab?</summary>
+          <p>FlashLab is a free web app that connects to your Kilter Board via Bluetooth. You can browse thousands of climbs, control LEDs, generate playlists, log your sends, and share sessions with friends — all from your phone.</p>
+        </details>
+        <details>
+          <summary>Which Kilter Boards does FlashLab support?</summary>
+          <p>All sizes: Original boards (7×10, 8×12, 12×12, 12×14, 16×12) and Homewall kits (7×10, 8×12, 10×10, 10×12) with both Full Ride and Mainline LED layouts.</p>
+        </details>
+        <details>
+          <summary>Does FlashLab work on iPhone or iPad?</summary>
+          <p>iOS/Safari does not support Web Bluetooth, so you can't connect directly. Use Party Mode instead — have an Android or desktop Chrome user host, then join from your iPhone with a PIN code.</p>
+        </details>
+        <details>
+          <summary>Do I need an account?</summary>
+          <p>No. Browse climbs, connect to your board, and generate playlists without signing up. Create a free account with just your email to unlock the logbook, community ratings, and tags.</p>
+        </details>
+        <details>
+          <summary>Does it work without internet?</summary>
+          <p>Yes. FlashLab is a Progressive Web App you can install on your home screen. The climb database is cached locally and Bluetooth control works entirely offline.</p>
+        </details>
+        <details>
+          <summary>What is Party Mode?</summary>
+          <p>One device hosts the Bluetooth connection while others join via PIN or QR code. Everyone can browse climbs and send routes to the board — no more passing one phone around.</p>
+        </details>
       </div>
     </section>
 
